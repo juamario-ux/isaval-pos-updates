@@ -2,8 +2,8 @@ name: Publish verified IsaVal POS update
 on:
   workflow_dispatch:
     inputs:
-      source_url:
-        description: Temporary ZIP download URL from the successful private build
+      draft_tag:
+        description: Tag of the draft release containing the signed APK
         required: true
         type: string
       notes:
@@ -25,15 +25,15 @@ jobs:
       - name: Download and verify signed APK
         id: verify
         env:
-          SOURCE_URL: ${{ inputs.source_url }}
+          DRAFT_TAG: ${{ inputs.draft_tag }}
           RELEASE_NOTES: ${{ inputs.notes }}
           GH_TOKEN: ${{ github.token }}
         run: python3 publish.py
-      - name: Upload complete release before promoting channel
+      - name: Upload manifest before promoting channel
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ steps.verify.outputs.tag }}
           VERSION: ${{ steps.verify.outputs.name }}
         run: |
-          gh release create "$TAG" IsaVal-POS.apk version.json --draft --title "IsaVal POS $VERSION" --notes-file release-notes.txt
-          gh release edit "$TAG" --draft=false --latest
+          gh release upload "$TAG" IsaVal-POS.apk version.json --clobber
+          gh release edit "$TAG" --title "IsaVal POS $VERSION" --notes-file release-notes.txt --draft=false --latest

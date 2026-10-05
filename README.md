@@ -1,17 +1,18 @@
 # Actualizaciones de IsaVal POS
 
-Este repositorio distribuye exclusivamente APK firmados y sus manifiestos. El código y la clave de firma permanecen en el repositorio privado.
-
-Canal estable para la app:
+Canal estable:
 https://github.com/juamario-ux/isaval-pos-updates/releases/latest/download/version.json
 
-## Publicar una nueva versión
-1. Incrementar versionCode y versionName en el repositorio privado alpha-0.2 y obtener una compilación exitosa.
-2. Obtener el enlace temporal de descarga del ZIP de Actions mediante el conector GitHub. No utilizar el enlace de la página web del artefacto.
-3. Ejecutar Actions → Publish verified IsaVal POS update → Run workflow; ingresar la URL temporal y las notas.
-4. El publicador verifica criptográficamente el APK y su certificado de IsaVal, extrae paquete/versión, rechaza retrocesos, calcula SHA-256 y publica APK + version.json antes de promover Latest.
-5. Desde IsaVal POS pulsar Buscar actualización → Descargar → Instalar y confirmar la instalación Android. Las ventas guardadas se conservan.
+Este repositorio distribuye APK firmados y manifiestos. El código de la app y la clave de firma permanecen privados.
 
-No hace falta conectar la SUNMI por USB para las versiones siguientes.
-La publicación requiere un operador después de compilar. No se publica automáticamente cada push del repositorio privado.
-No se necesitan tokens personales ni se guardan credenciales en la app.
+## Publicar una nueva versión
+1. Incrementar versionCode y versionName en la rama alpha-0.2 del repositorio privado y obtener una compilación exitosa.
+2. Descargar el APK de GitHub Actions.
+3. Crear un borrador de Release aquí con etiqueta vVERSION-buildCODIGO (por ejemplo v0.2.2-build8) y adjuntar el APK firmado.
+4. Ejecutar Actions → Publish verified IsaVal POS update → Run workflow; indicar la etiqueta del borrador y las notas.
+5. El publicador valida firma criptográfica, certificado de IsaVal, applicationId y versión; rechaza retrocesos, calcula SHA-256 y agrega version.json antes de promover el borrador a Latest.
+6. Desde la SUNMI: Buscar actualización → Descargar → Instalar; confirmar la instalación Android.
+
+Cada próxima versión se publica en este mismo canal. La SUNMI no necesita USB.
+La publicación requiere un operador después de compilar; cada push privado no se publica automáticamente.
+El publicador usa únicamente el GITHUB_TOKEN temporal de este repositorio. La app no contiene credenciales.

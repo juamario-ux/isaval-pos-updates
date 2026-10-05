@@ -1,20 +1,15 @@
-import hashlib, json, os, pathlib, re, subprocess, urllib.parse, urllib.request, zipfile
-source = os.environ["SOURCE_URL"]
-parsed = urllib.parse.urlparse(source)
-if parsed.scheme != "https" or not (parsed.hostname or "").endswith(".oaiusercontent.com"):
-    raise SystemExit("Use the temporary artifact download URL returned by the GitHub connector.")
-with urllib.request.urlopen(source, timeout=30) as response:
-    if not response.geturl().startswith("https://"):
-        raise SystemExit("HTTPS required.")
-    archive = response.read(16 * 1024 * 1024 + 1)
-if len(archive) > 16 * 1024 * 1024:
-    raise SystemExit("Artifact is too large.")
-pathlib.Path("artifact.zip").write_bytes(archive)
-with zipfile.ZipFile("artifact.zip") as bundle:
-    entries = [entry for entry in bundle.infolist() if entry.filename.endswith(".apk")]
-    if len(entries) != 1 or entries[0].file_size > 64 * 1024 * 1024:
-        raise SystemExit("Expected one APK, no larger than 64 MiB.")
-    pathlib.Path("IsaVal-POS.apk").write_bytes(bundle.read(entries[0]))
+import hashlib, json, os, pathlib, re, subprocess
+tag = os.environ["DRAFT_TAG"]
+if not re.fullmatch(r"v\d+\.\d+\.\d+-build\d+", tag):
+    raise SystemExit("Unexpected release tag.")
+release = json.loads(subprocess.check_output(["gh", "release", "view", tag, "--repo", os.environ["GITHUB_REPOSITORY"], "--json", "isDraft,tagName"], text=True))
+if not release["isDraft"]:
+    raise SystemExit("Only draft releases can be promoted.")
+subprocess.run(["gh", "release", "download", tag, "--repo", os.environ["GITHUB_REPOSITORY"], "--pattern", "*.apk", "--dir", "incoming"], check=True)
+apks = list(pathlib.Path("incoming").glob("*.apk"))
+if len(apks) != 1 or apks[0].stat().st_size > 64 * 1024 * 1024:
+    raise SystemExit("Expected exactly one APK, no larger than 64 MiB.")
+pathlib.Path("IsaVal-POS.apk").write_bytes(apks[0].read_bytes())
 sdk = pathlib.Path(os.environ["ANDROID_HOME"])
 versions = sorted((sdk / "build-tools").iterdir(), key=lambda p: tuple(int(x) for x in re.findall(r"\d+", p.name)))
 tools = versions[-1]
@@ -33,7 +28,9 @@ if not re.fullmatch(r"\d+\.\d+\.\d+", name):
 previous = subprocess.run(["gh", "release", "download", "--repo", os.environ["GITHUB_REPOSITORY"], "--pattern", "version.json", "--output", "previous-version.json"], capture_output=True)
 if previous.returncode == 0 and code <= json.loads(pathlib.Path("previous-version.json").read_text())["versionCode"]:
     raise SystemExit("Only versions newer than the published channel can be promoted.")
-tag = "v" + name + "-build" + str(code)
+expected_tag = "v" + name + "-build" + str(code)
+if tag != expected_tag:
+    raise SystemExit("Draft tag does not match the APK version.")
 notes = os.environ.get("RELEASE_NOTES", "Nueva versión de IsaVal POS.")
 manifest = {"versionCode": code, "versionName": name,
     "apkUrl": "https://github.com/" + os.environ["GITHUB_REPOSITORY"] + "/releases/download/" + tag + "/IsaVal-POS.apk",
