@@ -14,7 +14,8 @@ sdk = pathlib.Path(os.environ["ANDROID_HOME"])
 versions = sorted((sdk / "build-tools").iterdir(), key=lambda p: tuple(int(x) for x in re.findall(r"\d+", p.name)))
 tools = versions[-1]
 verification = subprocess.check_output([str(tools/"apksigner"), "verify", "--min-sdk-version", "25", "--verbose", "--print-certs", "IsaVal-POS.apk"], text=True)
-digests = re.findall(r"Signer #\d+ certificate SHA-256 digest: ([0-9a-f]+)", verification)
+print(verification)
+digests = [value.lower() for value in re.findall(r"certificate SHA-256 digest:\s*([0-9a-f]{64})", verification, re.IGNORECASE)]
 if digests != ["5538ed457f4770ed14f96f626ded3c217ab969de143872c98a2f52447ab0165b"]:
     raise SystemExit("Signing certificate does not match IsaVal POS.")
 badging = subprocess.check_output([str(tools/"aapt"), "dump", "badging", "IsaVal-POS.apk"], text=True)
