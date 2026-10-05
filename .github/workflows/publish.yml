@@ -1,0 +1,39 @@
+name: Publish verified IsaVal POS update
+on:
+  workflow_dispatch:
+    inputs:
+      source_url:
+        description: Temporary ZIP download URL from the successful private build
+        required: true
+        type: string
+      notes:
+        description: Release notes shown inside IsaVal POS
+        required: true
+        default: Diseño mejorado y actualización desde la app.
+        type: string
+permissions:
+  contents: write
+concurrency:
+  group: isaval-ota-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and verify signed APK
+        id: verify
+        env:
+          SOURCE_URL: ${{ inputs.source_url }}
+          RELEASE_NOTES: ${{ inputs.notes }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 publish.py
+      - name: Upload complete release before promoting channel
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.verify.outputs.tag }}
+          VERSION: ${{ steps.verify.outputs.name }}
+        run: |
+          gh release create "$TAG" IsaVal-POS.apk version.json --draft --title "IsaVal POS $VERSION" --notes-file release-notes.txt
+          gh release edit "$TAG" --draft=false --latest
