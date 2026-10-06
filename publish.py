@@ -2,6 +2,15 @@ import hashlib, json, os, pathlib, re, subprocess
 tag = os.environ["DRAFT_TAG"]
 if not re.fullmatch(r"v\d+\.\d+\.\d+-build\d+", tag):
     raise SystemExit("Unexpected release tag.")
+# Recover a saved draft when GitHub's tag picker could not validate a new tag.
+releases = json.loads(subprocess.check_output(["gh", "api", "repos/" + os.environ["GITHUB_REPOSITORY"] + "/releases"], text=True))
+if not any(r["tag_name"] == tag for r in releases):
+    expected_title = "IsaVal POS " + tag[1:].split("-build")[0]
+    drafts = [r for r in releases if r["draft"] and not r["tag_name"] and r["name"] == expected_title]
+    if len(drafts) != 1:
+        raise SystemExit("Expected exactly one untagged draft with the requested version title.")
+    draft = drafts[0]
+    subprocess.run(["gh", "api", "--method", "PATCH", "repos/" + os.environ["GITHUB_REPOSITORY"] + "/releases/" + str(draft["id"]), "-f", "tag_name=" + tag], check=True, stdout=subprocess.DEVNULL)
 release = json.loads(subprocess.check_output(["gh", "release", "view", tag, "--repo", os.environ["GITHUB_REPOSITORY"], "--json", "isDraft,tagName"], text=True))
 if not release["isDraft"]:
     raise SystemExit("Only draft releases can be promoted.")
