@@ -27,6 +27,8 @@ if view.returncode==0:
 else:
     subprocess.run(["gh","release","create",tag,"--draft","--title","IsaVal POS "+name,"--notes",cfg["notes"]],check=True)
 subprocess.run(["gh","release","upload",tag,str(apk),"--clobber"],check=True)
+apk.unlink()  # publish.py downloads and verifies the draft into this same directory
+
 env=dict(os.environ,DRAFT_TAG=tag,RELEASE_NOTES=cfg["notes"],GITHUB_OUTPUT=str(pathlib.Path("publish-output.txt").resolve()))
 subprocess.run(["python3","publish.py"],env=env,check=True)
 subprocess.run(["gh","release","upload",tag,"IsaVal-POS.apk","version.json","--clobber"],check=True)
