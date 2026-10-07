@@ -1,0 +1,20 @@
+name: Publish signed incoming IsaVal POS APK
+on:
+  push:
+    branches: [main]
+    paths: ['incoming/IsaVal-POS.apk', 'incoming/release.json']
+permissions:
+  contents: write
+concurrency:
+  group: isaval-ota-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify and publish incoming update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 publish-incoming.py

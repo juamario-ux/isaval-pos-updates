@@ -1,0 +1,6 @@
+{
+  "versionCode": 27,
+  "versionName": "0.3.1",
+  "sha256": "57f60cc505881213f3fa112b1286afa44096ac09fbd4c00ac0dbff78b8a1e7bb",
+  "notes": "Nombre comercial sincronizado en selector, inicio y tickets nuevos. Administración de negocios tras PIN y en Configuración; quitar conserva ventas y productos y permite recuperar. Reportes con Personalizar y selector de año, mes y día, incluyendo todo el día final. Campo código de barras / SKU opcional. Acceso por PIN sin scroll. Iconos de negocios azules e imagen propia configurable por negocio, incluida en respaldos. Conserva tickets anteriores. 24 pruebas Android aprobadas."
+}
