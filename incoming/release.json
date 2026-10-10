@@ -1,7 +1,6 @@
 {
-  "versionCode": 27,
-  "versionName": "0.3.1",
-  "sha256": "57f60cc505881213f3fa112b1286afa44096ac09fbd4c00ac0dbff78b8a1e7bb",
-  "notes": "Nombre comercial sincronizado en selector, inicio y tickets nuevos. Administración de negocios tras PIN y en Configuración; quitar conserva ventas y productos y permite recuperar. Reportes con Personalizar y selector de año, mes y día, incluyendo todo el día final. Campo código de barras / SKU opcional. Acceso por PIN sin scroll. Iconos de negocios azules e imagen propia configurable por negocio, incluida en respaldos. Conserva tickets anteriores. 24 pruebas Android aprobadas.",
-  "androidTestsPassed": 24
+  "versionCode": 33,
+  "versionName": "0.3.7",
+  "sha256": "bee47299d116ab3f789863eae841618f6cbadd4410cf2939f6f1179d6346b714",
+  "notes": "Pago con tarjeta: botones para abrir Wompi o Cubo. Conserva carrito, importe, usuario, negocio y referencia antes de abrir el proveedor; recupera la pantalla de confirmación incluso si Android recrea IsaVal POS. Requiere referencia y aprobación manual para registrar la venta. Vaciar carrito, cerrar sesión y completar la venta eliminan el pendiente. Tras cuatro horas se solicita PIN para recuperar el cobro.\n\nValidación: 39 pruebas Android aprobadas para recuperación y operaciones offline; compilación final exitosa. La apertura y retorno con Wompi/Cubo instalados se debe comprobar en la SUNMI."
 }
