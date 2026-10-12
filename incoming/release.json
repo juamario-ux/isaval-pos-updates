@@ -1,6 +1,6 @@
 {
-  "versionCode": 33,
-  "versionName": "0.3.7",
-  "sha256": "bee47299d116ab3f789863eae841618f6cbadd4410cf2939f6f1179d6346b714",
-  "notes": "Pago con tarjeta: botones para abrir Wompi o Cubo. Conserva carrito, importe, usuario, negocio y referencia antes de abrir el proveedor; recupera la pantalla de confirmación incluso si Android recrea IsaVal POS. Requiere referencia y aprobación manual para registrar la venta. Vaciar carrito, cerrar sesión y completar la venta eliminan el pendiente. Tras cuatro horas se solicita PIN para recuperar el cobro.\n\nValidación: 39 pruebas Android aprobadas para recuperación y operaciones offline; compilación final exitosa. La apertura y retorno con Wompi/Cubo instalados se debe comprobar en la SUNMI."
+  "versionCode": 38,
+  "versionName": "0.5.2",
+  "sha256": "37092b8de95c8615e9a69e0f4e4ca3ce51ffdaa17a6719d2762c8900c966f5fd",
+  "notes": "Selección de negocios: Continuar y Administrar negocios permanecen fijos en la parte inferior. Solo se desplaza la lista; título siempre visible y posición conservada al seleccionar un negocio. Compilación release correcta. La comprobación física en SUNMI queda pendiente."
 }
