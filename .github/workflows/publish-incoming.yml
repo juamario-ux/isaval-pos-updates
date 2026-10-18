@@ -17,4 +17,6 @@ jobs:
       - name: Verify and publish incoming update
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 publish-incoming.py
+        run: |
+          python3 download-incoming.py
+          python3 publish-incoming.py
