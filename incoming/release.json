@@ -1,6 +1,6 @@
 {
-  "versionCode": 39,
-  "versionName": "0.5.3",
-  "sha256": "c71f72004fc54e6a33b62f3e639ecbb83133dc19645f89141302ae12726564ad",
-  "notes": "Mejoras de fluidez para SUNMI: selección de negocios sin reconstruir la pantalla, reutilización de tarjetas al buscar productos, caché de miniaturas limitada a 2 MB y menos consultas repetidas en carrito e inicio. Conserva datos y funcionamiento de cobros. Compilación correcta y 69 pruebas Android aprobadas."
+  "versionCode": 40,
+  "versionName": "0.6.0",
+  "sha256": "7a2518395ad32089ae7791e46ea9384bc510de09fb47c2b15319eb68bb8bf064",
+  "notes": "Pedidos en espera persistentes para guardar y retomar varias ventas. Devoluciones completas con autorización, motivo y reposición opcional. Respaldos cifrados en Nextcloud existente, con verificación y retención de 14 copias automáticas. Conserva los datos existentes. Verificación Android: 79 pruebas aprobadas."
 }
