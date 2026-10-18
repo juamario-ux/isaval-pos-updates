@@ -1,6 +1,7 @@
 {
-  "versionCode": 40,
-  "versionName": "0.6.0",
-  "sha256": "7a2518395ad32089ae7791e46ea9384bc510de09fb47c2b15319eb68bb8bf064",
-  "notes": "Pedidos en espera persistentes para guardar y retomar varias ventas. Devoluciones completas con autorización, motivo y reposición opcional. Respaldos cifrados en Nextcloud existente, con verificación y retención de 14 copias automáticas. Conserva los datos existentes. Verificación Android: 79 pruebas aprobadas."
+  "versionCode": 41,
+  "versionName": "0.6.1",
+  "sha256": "2badd77611840f8144ee92df2da711a95800bc1f578145b9f9d53b778fdf6917",
+  "notes": "Reportes: ticket mínimo, máximo y promedio; utilidad estimada en dólares y margen estimado en porcentaje. Métodos de pago con porcentaje del total antes del monto. Conserva ventas y configuración. Verificación Android 7.1: 84 pruebas aprobadas.",
+  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-62c4-81f5-9d91-361feeeaf6ee/raw?se=2026-10-18T04%3A25%3A34Z&sp=r&sv=2026-02-06&sr=b&scid=7f242a76-5944-411a-b574-2fa94bab8e20&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T12%3A00%3A39Z&ske=2026-10-18T12%3A00%3A39Z&sks=b&skv=2026-02-06&sig=StCEwkWeS2ZsjhYjtk8IR%2BRUxmunybyW5WhpiVDOrPg%3D"
 }
