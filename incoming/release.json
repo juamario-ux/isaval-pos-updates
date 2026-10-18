@@ -1,7 +1,7 @@
 {
-  "versionCode": 41,
-  "versionName": "0.6.1",
-  "sha256": "2badd77611840f8144ee92df2da711a95800bc1f578145b9f9d53b778fdf6917",
-  "notes": "Reportes: ticket mínimo, máximo y promedio; utilidad estimada en dólares y margen estimado en porcentaje. Métodos de pago con porcentaje del total antes del monto. Conserva ventas y configuración. Verificación Android 7.1: 84 pruebas aprobadas.",
-  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-62c4-81f5-9d91-361feeeaf6ee/raw?se=2026-10-18T04%3A25%3A34Z&sp=r&sv=2026-02-06&sr=b&scid=7f242a76-5944-411a-b574-2fa94bab8e20&skoid=fae15675-a81a-44b5-9d8c-d8445a7c26a2&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T12%3A00%3A39Z&ske=2026-10-18T12%3A00%3A39Z&sks=b&skv=2026-02-06&sig=StCEwkWeS2ZsjhYjtk8IR%2BRUxmunybyW5WhpiVDOrPg%3D"
+  "versionCode": 42,
+  "versionName": "0.6.2",
+  "sha256": "70cb0abfedd46bd1f570e720bf6e5476bf32f9f067e8ae9718d30b03f45278ba",
+  "notes": "Reportes reorganizados en tickets, actividad y rentabilidad. Productos con unidades, valor después de descuentos y porcentaje de ventas, ordenados por valor. Nuevo botón Imprimir reporte para el negocio y periodo mostrados. Conserva ventas y configuración. Android 7.1: 89 pruebas aprobadas.",
+  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-9d2c-81f5-a8b6-8f4c365f0005/raw?se=2026-10-18T04%3A54%3A17Z&sp=r&sv=2026-02-06&sr=b&scid=85844358-5066-41d9-90c5-047b3f3e5920&skoid=38550de5-1fab-49d1-9ebb-83af5557cc43&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T19%3A32%3A18Z&ske=2026-10-18T19%3A32%3A18Z&sks=b&skv=2026-02-06&sig=PfxfG7CN9nHRTQbSnShxelPEWDgiH2J5NpknZ18xcl4%3D"
 }
