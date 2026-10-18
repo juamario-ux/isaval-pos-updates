@@ -1,7 +1,7 @@
 {
-  "versionCode": 45,
-  "versionName": "0.8.0",
-  "sha256": "8ba543e2a2e461dc25d03b8ea11d9ecb0b48c0a7c8566eadfacfe0fa53c18c3a",
-  "notes": "Cuentas por persona desde productos y cantidades: agrega el nombre, separa su consumo y revisa productos, unidades y valor. Registra varios pagos en efectivo, tarjeta o transferencia por persona, con vuelto y saldo pendiente hasta cero. Muestra productos sin asignar y estado de cada cuenta. Conserva el cobro al cambiar de aplicación e incluye el detalle por persona en el ticket y los respaldos. Descuentos distribuidos con centavos exactos y una sola venta e inventario al finalizar.",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-d80c-81f6-82f2-d95f6dc1a8b0/raw?se=2026-10-18T15%3A43%3A40Z&sp=r&sv=2026-02-06&sr=b&scid=9d896ab9-9210-4365-a724-c39a89caf29d&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T17%3A50%3A38Z&ske=2026-10-18T17%3A50%3A38Z&sks=b&skv=2026-02-06&sig=Pfprl0IJ2yjpr3IFTh2YHGxHOBbfeTY%2BnP0/PHeen/k%3D"
+  "versionCode": 46,
+  "versionName": "0.8.1",
+  "sha256": "373715d93fcecf0d75e586a2b6a0be107bbce71d4ff2749859f7542a11043986",
+  "notes": "División por persona renovada: productos con imagen, cantidad y valor como en el carrito, selectores −/+ y unidades restantes en vivo. Fuentes y espacios uniformes en cuentas y cobros. Atajos de efectivo $10, $20, $50, monto exacto y vuelto automático. Ticket individual al liquidar cada persona; ticket final compacto con los productos de la venta una sola vez y resumen de total y métodos por persona. Recuperación de la confirmación de instalación pendiente sin volver a descargar el APK verificado.",
+  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-9c1c-81f5-8b9c-bd569840fd86/raw?se=2026-10-18T16%3A56%3A04Z&sp=r&sv=2026-02-06&sr=b&scid=625985de-acf2-4778-af0e-68ec023217fb&skoid=de71a0d5-fb02-4fce-be69-9296aced242b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T19%3A51%3A40Z&ske=2026-10-18T19%3A51%3A40Z&sks=b&skv=2026-02-06&sig=4CtUCSuMRV1gcpLpYte98%2BL68MNIva3qQ24%2Ba6SrEjs%3D"
 }
