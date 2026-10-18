@@ -1,7 +1,7 @@
 {
-  "versionCode": 44,
-  "versionName": "0.7.0",
-  "sha256": "5dc7cc9158f0b6de84172d08668685a31e738190b40869f9d3b3280720518b2e",
-  "notes": "Pagos combinados con efectivo, tarjeta y transferencia; vuelto por cada parte. División por monto, nombre y consumo de cada persona, en una sola orden. Cierre del día por negocio que consolida turnos cerrados en hora de El Salvador, con guardado y reimpresión. Reporte impreso compacto: top 10 de productos en una o dos líneas y horas con ventas en dos columnas. Conserva datos y conexiones guardadas. Android 7.1: 112 pruebas aprobadas.",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-c190-81f6-a044-1a9d38051ef7/raw?se=2026-10-18T14%3A39%3A13Z&sp=r&sv=2026-02-06&sr=b&scid=b3200131-7673-44e9-9c50-d937161ecef3&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-18T10%3A57%3A15Z&ske=2026-10-19T10%3A57%3A15Z&sks=b&skv=2026-02-06&sig=JooZAg8n91oIyaaK6NVg0TcLLvLRyP8a4h3gy6lT4LI%3D"
+  "versionCode": 45,
+  "versionName": "0.8.0",
+  "sha256": "8ba543e2a2e461dc25d03b8ea11d9ecb0b48c0a7c8566eadfacfe0fa53c18c3a",
+  "notes": "Cuentas por persona desde productos y cantidades: agrega el nombre, separa su consumo y revisa productos, unidades y valor. Registra varios pagos en efectivo, tarjeta o transferencia por persona, con vuelto y saldo pendiente hasta cero. Muestra productos sin asignar y estado de cada cuenta. Conserva el cobro al cambiar de aplicación e incluye el detalle por persona en el ticket y los respaldos. Descuentos distribuidos con centavos exactos y una sola venta e inventario al finalizar.",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-d80c-81f6-82f2-d95f6dc1a8b0/raw?se=2026-10-18T15%3A43%3A40Z&sp=r&sv=2026-02-06&sr=b&scid=9d896ab9-9210-4365-a724-c39a89caf29d&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T17%3A50%3A38Z&ske=2026-10-18T17%3A50%3A38Z&sks=b&skv=2026-02-06&sig=Pfprl0IJ2yjpr3IFTh2YHGxHOBbfeTY%2BnP0/PHeen/k%3D"
 }
