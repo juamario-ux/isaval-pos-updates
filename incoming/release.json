@@ -1,7 +1,7 @@
 {
-  "versionCode": 42,
-  "versionName": "0.6.2",
-  "sha256": "70cb0abfedd46bd1f570e720bf6e5476bf32f9f067e8ae9718d30b03f45278ba",
-  "notes": "Reportes reorganizados en tickets, actividad y rentabilidad. Productos con unidades, valor después de descuentos y porcentaje de ventas, ordenados por valor. Nuevo botón Imprimir reporte para el negocio y periodo mostrados. Conserva ventas y configuración. Android 7.1: 89 pruebas aprobadas.",
-  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-9d2c-81f5-a8b6-8f4c365f0005/raw?se=2026-10-18T04%3A54%3A17Z&sp=r&sv=2026-02-06&sr=b&scid=85844358-5066-41d9-90c5-047b3f3e5920&skoid=38550de5-1fab-49d1-9ebb-83af5557cc43&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T19%3A32%3A18Z&ske=2026-10-18T19%3A32%3A18Z&sks=b&skv=2026-02-06&sig=PfxfG7CN9nHRTQbSnShxelPEWDgiH2J5NpknZ18xcl4%3D"
+  "versionCode": 43,
+  "versionName": "0.6.3",
+  "sha256": "01f2f15972d62fa0a040a552c7fdb84c2bf1ab32d9a49955c4a0ceed913d6acd",
+  "notes": "Corrige impresión de reportes: conecta la impresora al abrir la pantalla y espera la conexión antes de enviar. Evita duplicados durante la espera y permite reintentar si la conexión vence. Conserva ventas y configuración. Android 7.1: 95 pruebas aprobadas, incluidas 6 de impresora simulada.",
+  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-dacc-81f5-838d-c2f60b1a58df/raw?se=2026-10-18T05%3A27%3A43Z&sp=r&sv=2026-02-06&sr=b&scid=084e98d4-bf37-4bf4-95ee-25e80e195312&skoid=2757bbe4-5137-4324-975b-acedc0bad279&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T19%3A40%3A59Z&ske=2026-10-18T19%3A40%3A59Z&sks=b&skv=2026-02-06&sig=CFmtsQz359%2BPKyBRfkPNMPQIeOsT4xw/vRAYISgghyo%3D"
 }
