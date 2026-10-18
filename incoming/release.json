@@ -1,7 +1,7 @@
 {
-  "versionCode": 43,
-  "versionName": "0.6.3",
-  "sha256": "01f2f15972d62fa0a040a552c7fdb84c2bf1ab32d9a49955c4a0ceed913d6acd",
-  "notes": "Corrige impresión de reportes: conecta la impresora al abrir la pantalla y espera la conexión antes de enviar. Evita duplicados durante la espera y permite reintentar si la conexión vence. Conserva ventas y configuración. Android 7.1: 95 pruebas aprobadas, incluidas 6 de impresora simulada.",
-  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-dacc-81f5-838d-c2f60b1a58df/raw?se=2026-10-18T05%3A27%3A43Z&sp=r&sv=2026-02-06&sr=b&scid=084e98d4-bf37-4bf4-95ee-25e80e195312&skoid=2757bbe4-5137-4324-975b-acedc0bad279&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-17T19%3A40%3A59Z&ske=2026-10-18T19%3A40%3A59Z&sks=b&skv=2026-02-06&sig=CFmtsQz359%2BPKyBRfkPNMPQIeOsT4xw/vRAYISgghyo%3D"
+  "versionCode": 44,
+  "versionName": "0.7.0",
+  "sha256": "5dc7cc9158f0b6de84172d08668685a31e738190b40869f9d3b3280720518b2e",
+  "notes": "Pagos combinados con efectivo, tarjeta y transferencia; vuelto por cada parte. División por monto, nombre y consumo de cada persona, en una sola orden. Cierre del día por negocio que consolida turnos cerrados en hora de El Salvador, con guardado y reimpresión. Reporte impreso compacto: top 10 de productos en una o dos líneas y horas con ventas en dos columnas. Conserva datos y conexiones guardadas. Android 7.1: 112 pruebas aprobadas.",
+  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-c190-81f6-a044-1a9d38051ef7/raw?se=2026-10-18T14%3A39%3A13Z&sp=r&sv=2026-02-06&sr=b&scid=b3200131-7673-44e9-9c50-d937161ecef3&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-18T10%3A57%3A15Z&ske=2026-10-19T10%3A57%3A15Z&sks=b&skv=2026-02-06&sig=JooZAg8n91oIyaaK6NVg0TcLLvLRyP8a4h3gy6lT4LI%3D"
 }
