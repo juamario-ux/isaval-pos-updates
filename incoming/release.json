@@ -1,7 +1,7 @@
 {
-  "versionCode": 47,
-  "versionName": "0.9.0",
-  "sha256": "4fab0bd351c7c74eed6ddd375617455993e8683b5bdf18c31ae56c7d68dfdc76",
-  "notes": "Códigos propios automáticos para productos sin código, con secuencia ISV y origen visible: IsaVal POS o código registrado/fabricante. Se conservan los códigos existentes y sus ceros iniciales. Nuevo apartado Inventario → Imprimir viñetas de productos: vista previa, precio opcional, copias y tamaños 58×30, 58×40 y 58×50 mm. Impresión de código CODE 128 a 384 puntos, comprobación del modo etiqueta y prueba explícita en papel normal. Secuencia y origen incluidos en respaldos.",
-  "artifactUrl": "https://sdmntpreastus2.oaiusercontent.com/files/00000000-205c-81f6-83ea-7a385aef8935/raw?se=2026-10-18T19%3A55%3A28Z&sp=r&sv=2026-02-06&sr=b&scid=7f374ba5-b2b5-4eda-ad78-68760e601d7c&skoid=dd316919-ffbf-4550-9c54-dfc99f412009&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-18T14%3A36%3A22Z&ske=2026-10-19T14%3A36%3A22Z&sks=b&skv=2026-02-06&sig=poW3UcV%2BkscPlrfjCPaerDj2GA/BLW1qchZLlBDHBBo%3D"
+  "versionCode": 48,
+  "versionName": "0.9.1",
+  "sha256": "dca9261d4ba9eb4dbe1f759814944c9d0312310f450aa6e4e39f0bcd410ea4de",
+  "notes": "Tickets más claros en papel de 58 mm: nombre del producto en una sola línea y debajo cantidad, precio unitario y total. Nombre corto para ticket opcional con máximo de 28 caracteres y contador visible al crear o editar productos. Los nombres largos conservan el final para distinguir presentación o tamaño. Aplicado también a tickets por persona. Se conservan nombres completos del catálogo, ventas, existencias e historial. Compatible con respaldos anteriores.",
+  "artifactUrl": "https://sdmntprcacentral.oaiusercontent.com/files/00000000-146c-820d-9935-a39fd74241c3/raw?se=2026-10-26T00%3A06%3A21Z&sp=r&sv=2026-02-06&sr=b&scid=baf890a8-38e9-426d-b658-272d5fa2fa3a&skoid=434ec24f-a0f0-4e64-b0de-2e2053f69735&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-25T14%3A14%3A45Z&ske=2026-10-26T14%3A14%3A45Z&sks=b&skv=2026-02-06&sig=jyG5UW5uzbr3/874Wv1Sug7/x3YnFxuSBHvz8WU1alI%3D"
 }
