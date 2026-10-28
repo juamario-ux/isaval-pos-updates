@@ -1,7 +1,7 @@
 {
-  "versionCode": 48,
-  "versionName": "0.9.1",
-  "sha256": "dca9261d4ba9eb4dbe1f759814944c9d0312310f450aa6e4e39f0bcd410ea4de",
-  "notes": "Tickets más claros en papel de 58 mm: nombre del producto en una sola línea y debajo cantidad, precio unitario y total. Nombre corto para ticket opcional con máximo de 28 caracteres y contador visible al crear o editar productos. Los nombres largos conservan el final para distinguir presentación o tamaño. Aplicado también a tickets por persona. Se conservan nombres completos del catálogo, ventas, existencias e historial. Compatible con respaldos anteriores.",
-  "artifactUrl": "https://sdmntprcacentral.oaiusercontent.com/files/00000000-146c-820d-9935-a39fd74241c3/raw?se=2026-10-26T00%3A06%3A21Z&sp=r&sv=2026-02-06&sr=b&scid=baf890a8-38e9-426d-b658-272d5fa2fa3a&skoid=434ec24f-a0f0-4e64-b0de-2e2053f69735&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-25T14%3A14%3A45Z&ske=2026-10-26T14%3A14%3A45Z&sks=b&skv=2026-02-06&sig=jyG5UW5uzbr3/874Wv1Sug7/x3YnFxuSBHvz8WU1alI%3D"
+  "versionCode": 52,
+  "versionName": "0.11.0",
+  "sha256": "22dcfd366a7d9d0b3a1aa04b32acf70dfda02f1e053d64f29a21d624c983a02d",
+  "notes": "Comandas de preparación: botón Imprimir comanda junto a Imprimir ticket después de cobrar, impresión compacta sin precios, historial y resumen imprimible de unidades solicitadas, preparadas y canceladas. Reimpresiones sin duplicar cantidades, selección por producto y comandas incluidas en los respaldos. Habilitadas por defecto en Zuaré. Incluye sincronización ligera con Isaval Pos Dashboard y mejoras de envío y recuperación de conexión.",
+  "artifactUrl": "https://sdmntprcacentral.oaiusercontent.com/files/00000000-5bd4-820d-b861-13668e040a7f/raw?se=2026-10-28T02%3A11%3A40Z&sp=r&sv=2026-02-06&sr=b&scid=2f32e22a-698f-49b7-b5a4-f672bf5e27a0&skoid=434ec24f-a0f0-4e64-b0de-2e2053f69735&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-27T12%3A05%3A14Z&ske=2026-10-28T12%3A05%3A14Z&sks=b&skv=2026-02-06&sig=0d/5JNSURwpmao5aPbxjWoXzOav0XAwmOP59WgV71fg%3D"
 }
