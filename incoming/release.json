@@ -1,7 +1,7 @@
 {
-  "versionCode": 53,
-  "versionName": "0.11.1",
-  "sha256": "42036ccce3400d5b0264bcd673393d587e56e6c00802af3408fc67954ff52e77",
-  "notes": "Corrige los nombres de negocios en IsaVal Pos Dashboard: envía el nombre comercial separado del identificador interno, conserva las ventas históricas y permite actualizar nombres sin reenviar movimientos. Requiere instalar también la actualización de nombres del Dashboard en la HP. La sincronización de ventas sigue siendo compatible con el servidor anterior.",
-  "artifactUrl": "https://sdmntprcentralus.oaiusercontent.com/files/00000000-1e08-81f5-bb18-3aa7e19bf59e/raw?se=2026-10-29T01%3A57%3A37Z&sp=r&sv=2026-02-06&sr=b&scid=2beae7dc-5cb4-4dfa-94bf-c88aacb689cd&skoid=434ec24f-a0f0-4e64-b0de-2e2053f69735&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-28T12%3A03%3A44Z&ske=2026-10-29T12%3A03%3A44Z&sks=b&skv=2026-02-06&sig=VyXjHvYMYDc200nDeH9uSe1X4%2Bkss84Inqlv7fc0foE%3D"
+  "versionCode": 54,
+  "versionName": "0.12.0",
+  "sha256": "b6deadc77ff894466c9edeceff86363c3144e6fcfd16a44fd44434bdbb3c0051",
+  "notes": "Administración integral desde IsaVal Pos Dashboard: dispositivos, productos, precios, clientes, usuarios y negocios. Inventario independiente por SUNMI, entradas/salidas y conteos con confirmación y prevención de duplicados. Conserva ventas sin internet y respaldos. Requiere instalar Isaval-Dashboard-Administracion.zip en la HP. La vinculación actual se conserva.",
+  "artifactUrl": "https://sdmntprcacentral.oaiusercontent.com/files/00000000-c4d4-820d-a5fe-25ba4e84abd7/raw?se=2026-10-29T15%3A57%3A56Z&sp=r&sv=2026-02-06&sr=b&scid=db8b10e0-acfc-4ea9-9af8-a0a261e9432c&skoid=434ec24f-a0f0-4e64-b0de-2e2053f69735&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-29T15%3A08%3A09Z&ske=2026-10-30T15%3A08%3A09Z&sks=b&skv=2026-02-06&sig=k1Jcatkyhus6MHA0LoNiwMBaz9gimZwM7PwyKkFIVIo%3D"
 }
